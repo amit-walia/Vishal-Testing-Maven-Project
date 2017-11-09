@@ -3,6 +3,33 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	
+	
+	<groupId>org.LocalMaven.nexus</groupId>
+  <artifactId>Vish-Test-Maven-to-Nexus</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Vishal-Testing-Maven-Project-Nexus</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>Nexus Releases</name>
+      <url>http://192.168.1.121:49002/nexus-2.14.5-02/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+     	 <id>nexus</id>
+      <name>Nexus Snapshot</name>
+      <url>http://192.168.1.121:49002/nexus-2.14.5-02/content/repositories/snapshots</url>
+    </snapshotRepository>
+   
+   </distributionManagement>
+	
+	
 	<groupId>com.example</groupId>
 	<artifactId>product-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
