@@ -12,10 +12,19 @@
 	<description>Demo project for Spring Boot</description>
 	
 	<distributionManagement>
- <id>nexus-site-1</id>
-    <downloadUrl>http://192.168.1.121:49002/nexus-2.14.5-02/</downloadUrl>
-    <status>deployed</status>
-  </distributionManagement>	
+        <downloadUrl>http://192.168.1.121:49002/nexus-2.14.5-02/content/groups/public/</downloadUrl>
+        <!-- Deploy releases -->
+        <repository>
+               <id>releases</id>
+    <url>http://192.168.1.121:49002/nexus-2.14.5-02/content/repositories/releases</url>
+         </repository>
+        <!-- Deploy snapshots -->
+         <snapshotRepository>
+    <id>snapshots</id>
+    <url>http://192.168.1.121:49002/nexus-2.14.5-02/content/repositories/snapshots</url>
+  </snapshotRepository>
+    </distributionManagement>
+		
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
