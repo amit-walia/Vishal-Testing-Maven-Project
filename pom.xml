@@ -101,5 +101,9 @@
 			</plugin>
 		</plugins>
 	</build>
-
+<distributionManagement>
+    ...
+    <downloadUrl>http://192.168.1.121:49002/nexus-2.14.5-02/</downloadUrl>
+    <status>deployed</status>
+  </distributionManagement>
 </project>
