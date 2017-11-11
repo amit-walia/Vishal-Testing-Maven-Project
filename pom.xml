@@ -12,10 +12,10 @@
 	<description>Demo project for Spring Boot</description>
 	
 	<distributionManagement>
-    ...
+ <id>nexus-site-1</id>
     <downloadUrl>http://192.168.1.121:49002/nexus-2.14.5-02/</downloadUrl>
     <status>deployed</status>
-  </distributionManagement>
+  </distributionManagement>	
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
