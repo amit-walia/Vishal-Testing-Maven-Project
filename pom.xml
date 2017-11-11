@@ -67,5 +67,37 @@
 		</plugins>
 	</build>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.1</version>
+				<executions>
+					<execution>
+						<id>default-deploy</id>
+						<phase>deploy</phase>
+						<!-- By default, this is the phase deploy goal will bind to -->
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+				<!-- The Base URL of Nexus instance where we want to stage -->
+					<nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+					<!-- The server "id" element from settings to use authentication from -->
+					<serverId>local-nexus</serverId>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
