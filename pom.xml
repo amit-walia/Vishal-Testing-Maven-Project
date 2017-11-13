@@ -102,12 +102,21 @@
 							<goal>deploy</goal>
 						</goals>
 					</execution>
-				</executions>
+					</executions>
 				<configuration>
 				<!-- The Base URL of Nexus instance where we want to stage -->
 					<nexusUrl>http://192.168.1.121:49002/nexus-2.14.5-02</nexusUrl>
 					<!-- The server "id" element from settings to use authentication from -->
 					<serverId>LocalNexus</serverId>
+					
+					 <dependency>
+    					<groupId>LocalNexus2</groupId>
+    					<artifactId>NexusArtifactId-1</artifactId>
+    					<version>2.14.5-02</version>
+    	    				</dependency>
+	
+					
+					
 				</configuration>
 			</plugin>
 		
