@@ -110,9 +110,10 @@
 					<serverId>LocalNexus</serverId>
 					
 					 <dependency>
-    					<groupId>LocalNexus2</groupId>
+    					<groupId>com.example</groupId>
     					<artifactId>product-app</artifactId>
     					<version>0.0.1-SNAPSHOT</version>
+					<packaging>jar</packaging> 
     	    				</dependency>
 	
 					
