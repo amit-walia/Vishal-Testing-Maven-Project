@@ -111,8 +111,8 @@
 					
 					 <dependency>
     					<groupId>LocalNexus2</groupId>
-    					<artifactId>NexusArtifactId-1</artifactId>
-    					<version>2.14.5-02</version>
+    					<artifactId>product-app</artifactId>
+    					<version>0.0.1-SNAPSHOT</version>
     	    				</dependency>
 	
 					
