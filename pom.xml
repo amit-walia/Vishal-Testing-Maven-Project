@@ -107,7 +107,7 @@
 				<!-- The Base URL of Nexus instance where we want to stage -->
 					<nexusUrl>http://192.168.1.121:49002/nexus-2.14.5-02</nexusUrl>
 					<!-- The server "id" element from settings to use authentication from -->
-					<serverId>LocalNexus</serverId>
+					<serverId>LocalNexusServer</serverId>
 					
 					 <dependency>
     					<groupId>com.example</groupId>
