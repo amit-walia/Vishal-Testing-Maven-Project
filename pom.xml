@@ -16,12 +16,12 @@
         <!-- Deploy releases -->
         <repository>
                <id>releases</id>
-    <url>http://192.168.1.121:49002/nexus-2.14.5-02/content/repositories/releases</url>
+    <url>http://192.168.1.121:49002/nexus-2.14.5-02/content/repositories/releases/</url>
          </repository>
         <!-- Deploy snapshots -->
          <snapshotRepository>
     <id>snapshots</id>
-    <url>http://192.168.1.121:49002/nexus-2.14.5-02/content/repositories/snapshots</url>
+    <url>http://192.168.1.121:49002/nexus-2.14.5-02/content/repositories/snapshots/</url>
   </snapshotRepository>
     </distributionManagement>
 		
@@ -105,7 +105,7 @@
 					</executions>
 				<configuration>
 				<!-- The Base URL of Nexus instance where we want to stage -->
-					<nexusUrl>http://192.168.1.121:49002/nexus-2.14.5-02</nexusUrl>
+					<nexusUrl>http://192.168.1.121:49002/nexus-2.14.5-02/</nexusUrl>
 					<!-- The server "id" element from settings to use authentication from -->
 					<serverId>1234</serverId>
 					
