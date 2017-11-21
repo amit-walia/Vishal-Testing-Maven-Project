@@ -99,7 +99,7 @@
 						<phase>deploy</phase>
 						<!-- By default, this is the phase deploy goal will bind to -->
 						<goals>
-							<goal>clean package</goal>
+							<goal> </goal>
 						</goals>
 					</execution>
 					</executions>
